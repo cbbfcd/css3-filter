@@ -2,7 +2,7 @@
 * @Author: huangteng
 * @Date:   2018-02-26 21:37:40
 * @Last Modified by:   huangteng
-* @Last Modified time: 2018-03-06 14:51:08
+* @Last Modified time: 2018-03-06 21:03:28
 * @Description: 滑动条组件
 */
 import React from 'react';
@@ -146,6 +146,7 @@ export default class Slider extends React.Component {
 		let {max, min, cb, id} = this.props;
 		if(!draging) return;
 		this.timer = setTimeout(()=>{
+			this.timer = null;
 			let	nowLeft = e.clientX, 
 				offset = nowLeft-startLeft, 
 				percent = ~~((sliderLeft+offset)*100/parentWidth);

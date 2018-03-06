@@ -2,7 +2,7 @@
 * @Author: huangteng
 * @Date:   2018-02-28 21:37:29
 * @Last Modified by:   huangteng
-* @Last Modified time: 2018-03-06 14:51:36
+* @Last Modified time: 2018-03-06 21:30:20
 * @Description: 本地图片选择器
 */
 
@@ -63,8 +63,8 @@ const ExportImgButton = styled.a`
 	text-decoration: none;
 `;
 
-const CLOUDINARY_UPLOAD_PRESET = 'ablcw1ny';
-const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/dx8fauik4/image/upload';
+const CLOUDINARY_UPLOAD_PRESET = 'your_preset';
+const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/your_name/image/upload';
 
 export default class ImgUploader extends React.Component {
 	state = {
